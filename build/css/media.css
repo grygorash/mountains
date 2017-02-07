@@ -1,0 +1,196 @@
+@media only screen and (max-width : 1900px) {
+	.about .about-cont .right .img-2{
+		max-width: 806px;
+		width: 100%;
+	}
+}
+@media only screen and (max-width : 1400px) {
+	.reviews{
+		height: 100%;
+	}
+	.reviews .reviews-cont .contact{
+		margin-bottom: 140px;
+		margin-top: 0;
+	}
+	.reviews .reviews-cont{
+		height: 100%;
+	}
+	.header .nav-bg .nav .logo{
+		padding-left: 20px;
+	}
+	.header .nav-bg .nav .button{
+		padding-right: 20px;
+	}
+	.about .about-cont .left{
+		padding-left: 20px;
+	}
+	.journal .journal-cont .gallery{
+		height: 1139px;
+		width: 760px;
+	}
+	.journal {
+		height: 100%;
+		padding-bottom: 70px;
+	}
+	.journal .journal-cont .gallery .item-3 .it-img{
+		width: 474px;
+	}
+	.journal .journal-cont .gallery .item-3{
+		flex-flow: row;
+		max-width: 760px;
+	}
+	.journal .journal-cont .gallery .item-3 .it-cont .arrow {
+		position: absolute;
+		top: 50px;
+		left: -11px;
+		transform: rotate(0deg);
+	}
+	.work .work-cont .work-items .item-1{
+		padding-left: 20px;
+	}
+	.work .work-cont .work-items .item-4{
+		padding-right: 20px;
+	}
+}
+@media only screen and (max-width : 1140px){
+	.gallery .gallery-cont .gallery-items .item-3{
+		margin: auto;
+		flex-flow: row;
+		align-items: center;
+		max-width: 653px;
+		width: 100%;
+	}
+	.gallery .gallery-cont .gallery-items .item-3 img{
+		width: 100%;
+		height: 220px;
+	}
+	.gallery .gallery-cont .gallery-items .pad-right{
+		padding-right: 30px;
+	}
+	.order .order-cont .sub-title{
+		text-align: center;
+	}
+	.reviews .reviews-cont .footer{
+		justify-content: space-around;
+	}
+	.travel .travel-cont .tours .item-container{
+		width: 100%;
+		max-width: 280px;
+		display: flex;
+		justify-content: center;
+	}
+	.travel .travel-cont .tours .tour-item-1,.travel .travel-cont .tours .tour-item-2,.travel .travel-cont .tours .tour-item-3,.travel .travel-cont .tours .tour-item-4,.travel .travel-cont .tours .tour-item-5{
+		margin-right: 0;
+	}
+	.travel .travel-cont .tours .margin-top-4, .travel .travel-cont .tours .margin-top-5{
+		margin-top: 30px;
+	}
+	.gallery .gallery-cont .gallery-items{
+		justify-content: center;
+	}
+	.gallery .gallery-cont .gallery-items .item-1, .gallery .gallery-cont .gallery-items .item-2{
+		margin: 0;
+	}
+	.gallery .gallery-cont .gallery-items .item-2{
+		padding-right: 0;
+	}
+	.reviews .reviews-cont .reviews-items .item-1, .reviews .reviews-cont .reviews-items .item-2{
+		max-width: 450px;
+	}
+	.reviews .reviews-cont .reviews-items{
+		justify-content: space-around;
+	}
+	.order .order-cont{
+		align-items: center
+	}
+	.sponsors .sponsor-cont{
+		justify-content: space-around;
+	}
+}
+@media only screen and (max-width : 1024px) {
+	.work .work-cont .work-items .item-1 .shape-cont img{
+		max-width: 830px;
+	}
+	.travel .travel-cont .tours .item-container{
+		max-width: 257px;
+	}
+}
+@media only screen and (max-width : 920px) {
+	.work .work-cont .work-items .item-1 .shape-cont{
+		display: none;
+	}
+	.travel .travel-cont .tours .item-container{
+		max-width: 256px;
+	}
+	.work .work-cont .work-items .item-1, .work .work-cont .work-items .item-2, .work .work-cont .work-items .item-3, .work .work-cont .work-items .item-4{
+		max-width: 250px;
+	}
+	.work .work-cont .work-items .item-2{
+		padding-right: 20px;
+	}
+	.work .work-cont .work-items .item-3{
+		padding-left: 20px;
+		padding-top: 20px;
+	}
+	.work .work-cont .work-items .item-4{
+		padding-top: 20px;
+	}
+	.work .work-cont .work-items{
+		justify-content: center;
+	}
+	.header .nav-bg .nav .menu a{
+		font-size: 10px;
+	}
+	.header .nav-bg .nav .menu{
+		padding-left: 20px;
+	}
+	.header .nav-bg .nav .button a{
+		padding: 13px 30px;
+	}
+	.about .about-cont .left{
+		max-width: 374px;
+	}
+	.about .about-cont{
+		flex-flow: column;
+	}
+	.about .about-cont .right .img-2 {
+		max-width: 500px;
+		width: 100%;
+		right: 50px;
+		top: 45px;
+		left: auto;
+	}
+	.about .about-cont .right .img-1 {
+		bottom: 20px;
+		left: 50px;
+		z-index: 1;
+		max-width: 250px;
+	}
+	.about .about-cont .left {
+		max-width: 600px;
+		text-align: center;
+	}
+	.order .order-cont .form{
+		max-width: 602px;
+	}
+	.order .order-cont .form form{
+		background-color: transparent;
+	}
+	.order .order-cont .form form button{
+		background-color: transparent;
+	}
+	.order .order-cont .form form .btn{
+		display: flex;
+		margin: auto;
+		margin-top: 20px;
+	}
+	.reviews .reviews-cont .reviews-items .item-1, .reviews .reviews-cont .reviews-items .item-2{
+		background-color: rgba(255,255,255,.7);
+		padding: 20px;
+		border-radius: 7px;
+	}
+	.reviews .reviews-cont .reviews-items .item-1{
+		margin-bottom: 10px;
+	}
+}
+
