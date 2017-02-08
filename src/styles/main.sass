@@ -1,6 +1,8 @@
 @font-face 
 	font-family: Bringin
 	src: url(../fonts/bringin.otf)
+
+
 .button
 	right: 0
 	cursor: pointer
@@ -13,7 +15,7 @@
 		text-transform: uppercase
 		border-radius: 4px
 		border: 3px solid #36aeea
-		padding: 13px 49px
+		padding: 13px 42px
 		transition: all 0.3s ease-in-out
 		&:hover
 			border-radius: 4px
@@ -43,6 +45,7 @@
 				line-height: 44px
 				text-transform: capitalize
 				transition: all 0.3s ease-in-out
+				padding-left: 9px
 				&:hover
 					transform: scale(1.2,1.2)
 				span
@@ -50,7 +53,7 @@
 				a
 					color: #95a5ad
 			.menu
-				padding-left: 62px
+				padding-left: 60px
 				a
 					color: #9daeb6
 					font-family: "Open Sans"
@@ -58,15 +61,19 @@
 					font-weight: 700
 					line-height: 44px
 					text-transform: uppercase
-					margin: 0 11px
 					padding: 7px 0
+					margin-right: 21px
 					&:first-child
-						margin: 0
+						// margin: 0
 					&:hover
 						border-bottom: 2px solid #36aeea
+					
+
 			.button
 				position: absolute
-				top: 22px
+				top: 23px
+				right: -9px
+				letter-spacing: 2px
 	.title-pos
 		display: flex
 		max-width: 1135px
@@ -74,40 +81,43 @@
 		margin: auto
 		padding-top: 156px			
 		.header-cont
-			max-width: 485px
+			max-width: 500px
 			max-height: 237px
-			padding-top: 25px
+			padding-top: 15px
 			padding-left: 40px
 			position: absolute
 			cursor: default
 			.title
 				color: #56c7ff
 				font-family: Bringin
-				font-size: 66px
+				font-size: 67px
 				font-weight: 400
-				line-height: 39px
+				line-height: 40px
+				letter-spacing: 1px
 				span
 					font-family: "Open Sans"
 					color: #ffffff
 					font-size: 50px
 					font-weight: 700
 					text-transform: uppercase
-					letter-spacing: 5px
+					letter-spacing: 6px
 			.sub-title
 				opacity: 0.75
 				color: #ffffff
-				font-family: "Open Sans"
+				font-family: "OpenSans-Regular"
 				font-size: 18px
 				font-weight: 400
 				line-height: 29px
-				padding-bottom: 27px
-				padding-top: 17px
+				padding-bottom: 30px
+				padding-top: 19px
+				padding-left: 3px
+				max-width: 450px
 			.button
+				margin-left: 4px
 				a
 					font-family: Raleway
 					font-size: 14px
 					font-weight: 700
-					line-height: 44px
 					text-transform: uppercase
 					letter-spacing: 2px
 					padding: 19px 71px
@@ -141,25 +151,31 @@
 			cursor: default
 			padding-bottom: 40px
 			width: 100%
+			.waves
+				padding-top: 2px
 			.title
 				color: #2c2e37
 				font-family: "Open Sans"
-				font-size: 20px
+				font-size: 21px
 				font-weight: 700
 				line-height: 43px
 				text-transform: uppercase
-				padding-top: 20px
+				padding-top: 25px
+				letter-spacing: 1px
 			.sub-title
 				color: #949494
 				font-family: "Open Sans"
-				font-size: 14px
+				font-size: 15px
 				font-weight: 400
 				line-height: 26px
-				padding-top: 10px
-				padding-bottom: 25px
+				padding-top: 9px
+				padding-bottom: 23px
 			.button
+				padding-left: 2px	
 				a
-					padding: 10px 27px
+					padding: 10px 23px
+					letter-spacing: 1px
+
 		.right
 			max-width: 895px
 			width: 100%
@@ -188,7 +204,7 @@
 
 .journal
 	background-color: #FFF
-	height: 1045px
+	height: 1064px
 	.journal-cont
 		max-width: 1140px
 		display: flex
@@ -198,16 +214,17 @@
 		cursor: default
 		text-align: center
 		.waves
-			padding-top: 65px
+			padding-top: 64px
+			margin-left: -2px
 		.title
 			color: #2c2e37
 			font-family: "Open Sans"
 			font-size: 30px
 			font-weight: 700
 			text-transform: uppercase
-			padding-top: 20px
-			padding-bottom: 48px
-			letter-spacing: 1px
+			padding-top: 22px
+			padding-bottom: 68px
+			letter-spacing: 3px
 
 		.gallery
 			display: flex
@@ -232,7 +249,7 @@
 					position: relative
 					max-width: 380px
 					width: 100%
-					padding: 47px 0
+					padding: 23px 0
 					.arrow
 						position: absolute
 						left: -11px
@@ -242,8 +259,8 @@
 						font-size: 11px
 						font-weight: 700
 						text-transform: uppercase
-						letter-spacing: 1px
-						padding-top: 0
+						letter-spacing: 2px
+						padding-bottom: 48px
 						a
 							color: #0083b3
 							transition: all 0.3s ease-in-out
@@ -255,23 +272,24 @@
 						font-size: 17px
 						font-weight: 700
 						text-transform: uppercase
-						max-width: 319px
+						max-width: 330px
 						margin: auto
-						padding-bottom: 17px
-						letter-spacing: 1px
+						padding-bottom: 19px
+						letter-spacing: 2px
 					.text
 						color: #777777
 						font-family: "Open Sans"
 						font-size: 15px
 						font-weight: 400
 						line-height: 22px
+						margin: auto
 					.number
 						color: #212121
 						font-family: "Times New Roman"
 						font-size: 14px
 						font-weight: 400
 						font-style: italic
-						padding-top: 33px
+						padding-top: 38px
 
 
 			.item-2
@@ -280,7 +298,7 @@
 				display: flex
 				flex-flow: row 
 				.it-img
-					background-image: url("../img/journal-img-2.png")
+					background-image: url("../img/journal-img-3.png")
 					width: 760px
 					height: 380px
 					display: flex
@@ -290,13 +308,13 @@
 						width: 65px
 						height: 65px
 				.it-cont
+					position: relative
 					max-width: 380px
 					width: 100%
-					padding: 47px 0
-					position: relative
+					padding: 23px 0
 					.arrow
 						position: absolute
-						top: 50px
+						top: 49px
 						right: -11px
 						transform: rotate(180deg)
 					.title
@@ -304,8 +322,8 @@
 						font-size: 11px
 						font-weight: 700
 						text-transform: uppercase
-						letter-spacing: 1px
-						padding-top: 0
+						letter-spacing: 2px
+						padding-bottom: 48px
 						a
 							color: #0083b3
 							transition: all 0.3s ease-in-out
@@ -317,33 +335,32 @@
 						font-size: 17px
 						font-weight: 700
 						text-transform: uppercase
-						max-width: 319px
+						max-width: 300px
 						margin: auto
-						padding-bottom: 17px
-						max-width: 246px
-						letter-spacing: 1px
-						span
-							text-decoration: line-through
+						padding-bottom: 20px
+						letter-spacing: 2px
+						padding-left: 5px
 					.text
 						color: #777777
 						font-family: "Open Sans"
 						font-size: 15px
 						font-weight: 400
 						line-height: 22px
+						margin: auto
 					.number
 						color: #212121
 						font-family: "Times New Roman"
 						font-size: 14px
 						font-weight: 400
 						font-style: italic
-						padding-top: 33px
+						padding-top: 38px
 			.item-3
 				max-width: 380px
 				width: 100%
 				display: flex
 				flex-flow: column
 				.it-img
-					background-image: url("../img/journal-img-3.png")
+					background-image: url("../img/journal-img-2.png")
 					width: 380px
 					height: 380px
 					display: flex
@@ -353,23 +370,22 @@
 						width: 59px
 						height: 74px
 				.it-cont
+					position: relative
 					max-width: 380px
 					width: 100%
-					padding: 47px 0
-					position: relative
+					padding: 23px 0
 					.arrow
 						position: absolute
-						top: -18px
-						left: 50px
+						left: 55px
+						top: -17px
 						transform: rotate(90deg)
 					.title
-						color: #16b5ef
 						font-family: "Open Sans"
 						font-size: 11px
 						font-weight: 700
 						text-transform: uppercase
 						letter-spacing: 1px
-						padding-top: 0
+						padding-bottom: 46px
 						a
 							color: #0083b3
 							transition: all 0.3s ease-in-out
@@ -381,27 +397,26 @@
 						font-size: 17px
 						font-weight: 700
 						text-transform: uppercase
-						max-width: 319px
+						max-width: 200px
 						margin: auto
-						padding-bottom: 40px
-						max-width: 246px
-						letter-spacing: 1px
-						width: 168px
-						span
-							text-decoration: line-through
+						padding-bottom: 42px
+						letter-spacing: 1pt
+						line-height: 24px
 					.text
 						color: #777777
 						font-family: "Open Sans"
 						font-size: 15px
 						font-weight: 400
 						line-height: 22px
+						margin: auto
 					.number
 						color: #212121
 						font-family: "Times New Roman"
 						font-size: 14px
 						font-weight: 400
 						font-style: italic
-						padding-top: 33px
+						padding-top: 37px
+						padding-left: 8px
 
 
 
@@ -423,35 +438,43 @@
 		align-items: flex-start
 		height: 651px
 		.waves
-			padding-top: 141px
+			padding-top: 138px
+			margin-left: -2px
 		.title
 			color: #2c2e37
 			font-family: "Open Sans"
 			font-size: 20px
 			font-weight: 700
 			text-transform: uppercase
-			padding-top: 35px
-			padding-bottom: 13px
+			padding-top: 32px
+			padding-bottom: 14px
 			cursor: default
+			letter-spacing: 1pt
+			margin-left: -2px
 		.sub-title
 			color: #949494
 			font-family: "Open Sans"
 			font-size: 16px
 			font-weight: 400
 			line-height: 26px
-			padding-bottom: 29px
+			padding-bottom: 27px
 			cursor: default
+			margin-left: -1px
 		.validation
 			color: #36AEEA
 			font-family: "Open Sans"
 			font-size: 14px
 			font-weight: 400
 			cursor: default
-			padding-top: 19px
+			padding-top: 17px
+			display: flex
 			img
-				margin-right: 7px
+				padding-right: 12px
+				margin-left: -2px
+				padding-top: 3px
+
 		.form
-			max-width: 847px
+			max-width: 853px
 			width: 100%
 			form
 				display: flex
@@ -465,12 +488,12 @@
 						height: 35px
 						border-left: 1px solid #ebebeb
 						z-index: 2
-						margin-top: 14px
+						margin-top: 12px
 					input
 						border: none
 						height: 60px
 						outline: none
-						width: 260px
+						width: 257px
 						color: #848484
 						font-size: 16px
 						font-weight: 400
@@ -497,7 +520,7 @@
 					margin-top: 2px
 					margin-right: 2px
 					background-color: #fff
-					margin-left: 17px
+					margin-left: 29px
 					letter-spacing: 1px
 					&:hover
 						border-radius: 4px
@@ -524,7 +547,7 @@
 		align-items: center
 		cursor: default
 		.waves
-			padding-top: 64px
+			padding-top: 63px
 		.title
 			color: #2c2e37
 			font-family: "Open Sans"
@@ -532,14 +555,14 @@
 			font-weight: 700
 			text-transform: uppercase
 			padding-top: 22px
-			letter-spacing: 2px
+			letter-spacing: 3px
 		.work-items
 			display: flex
 			flex-flow: row wrap
 			justify-content: space-between
-			max-width: 1080px
+			max-width: 1082px
 			width: 100%
-			padding-top: 70px
+			padding-top: 67px
 			padding-bottom: 45px
 			.item-1, .item-2, .item-3, .item-4
 				display: flex
@@ -567,26 +590,38 @@
 					img
 						width: 123px
 						height: 134px
-						padding-top: 10px
+						padding-top: 9px
+						margin-left: -2px
 				.title
-					font-family: Roboto
+					font-family: "Roboto"
 					color: #2c2e37
 					font-size: 18px
 					font-weight: 900
 					text-transform: none
+					width: 300px
+					letter-spacing: 0
+					padding-top: 24px
+					padding-bottom: 3px
 				.sub-title
 					color: #949494
 					font-size: 15px
 					font-weight: 300
-					font-family: Roboto
+					font-family: "Roboto"
+					line-height: 23px
+					letter-spacing: 1px
+					width: 250px
 			.item-1
 				position: relative
+				padding-left: 2px
 				.shape-cont
 					position: absolute
 					top: 10px
 					left: 82px
 					max-width: 926px
 					width: 100%
+			.item-2
+				.title
+					margin-left: -3px
 					
 
 
@@ -602,13 +637,14 @@
 	background: url(../img/travel-bg.jpg) center  no-repeat
 	background-size: cover
 	height: 1080px
+	margin-top: -4px
 	.travel-cont
 		display: flex
 		flex-flow: column wrap
 		max-width: 1140px
 		margin: auto
 		align-items: center
-		padding-top: 51px
+		padding-top: 52px
 		cursor: default
 		.title
 			color: #2c2e37
@@ -616,9 +652,10 @@
 			font-size: 30px
 			font-weight: 700
 			text-transform: uppercase
-			padding-top: 23px
+			padding-top: 22px
 			padding-bottom: 89px
 			letter-spacing: 3px
+			padding-left: 2px
 		.tours
 			display: flex
 			flex-flow: row wrap
@@ -633,7 +670,7 @@
 				img
 					width: 98px
 					height: 38px
-					padding-top: 5px
+					padding-top: 4px
 					padding-left: 10px
 			.tour-item-2
 				background-image: url("../img/tour-item-2.png")
@@ -641,31 +678,35 @@
 				img
 					width: 118px
 					height: 38px
-					padding-top: 5px
-					padding-left: 10px
+					padding-top: 4px
+					padding-left: 7px
 			.tour-item-3
 				background-image: url("../img/tour-item-3.png")
 				margin-right: 35px
 				img
 					width: 118px
 					height: 38px
-					padding-top: 5px
-					padding-left: 10px
+					padding-top: 3px
+					padding-left: 8px
 			.tour-item-4
 				background-image: url("../img/tour-item-4.png")
 				margin-right: 35px
 				img
 					width: 118px
 					height: 38px
-					padding-top: 5px
+					padding-top: 3px
 					padding-left: 10px
 			.tour-item-5
 				background-image: url("../img/tour-item-5.png")
 				img
 					width: 78px
 					height: 38px
-					padding-top: 5px
+					padding-top: 3px
 					padding-left: 10px
+			.tour-item-5
+				.price
+					.price-right
+						padding-right: 3px
 			.tour-item-1,.tour-item-2,.tour-item-3,.tour-item-4,.tour-item-5
 				width: 200px
 				height: 382px
@@ -675,7 +716,7 @@
 				.text
 					padding-left: 20px
 					padding-right: 11px
-					padding-top: 16px
+					padding-top: 14px
 					.title
 						color: #ffffff
 						font-family: "Open Sans"
@@ -689,8 +730,6 @@
 							color: #ffffff
 							&:hover
 								border-bottom: 2px solid #fff
-
-							
 					.sub-title
 						width: 159px
 						color: #ffffff
@@ -700,18 +739,19 @@
 						line-height: 22px
 						padding-top: 10px
 				.price
-					padding-left: 20px
-					padding-right: 11px
+					padding-left: 19px
+					padding-right: 12px
 					display: flex
 					flex-flow: row wrap
 					justify-content: space-between
-					padding-bottom: 20px
+					padding-bottom: 19px
 					.price-left
 						color: #ffffff
 						font-family: "Open Sans"
 						font-size: 18px
 						font-weight: 400
 						text-decoration: line-through
+
 					.price-right
 						color: #ffffff
 						font-family: "Open Sans"
@@ -737,7 +777,8 @@
 		align-items: center
 		cursor: default
 		.waves
-			padding-top: 65px
+			padding-top: 64px
+			margin-left: -2px
 		.title
 			width: 148px
 			color: #2c2e37
@@ -745,9 +786,9 @@
 			font-size: 30px
 			font-weight: 700
 			text-transform: uppercase
-			letter-spacing: 2px
-			padding-top: 24px
-			padding-bottom: 66px
+			letter-spacing: 3px
+			padding-top: 22px
+			padding-bottom: 64px
 		.gallery-items
 			display: flex
 			flex-flow: row wrap
@@ -758,13 +799,13 @@
 				margin: auto
 				flex-flow: column wrap
 				.item-cont
-					padding-bottom: 30px
+					padding-bottom: 26px
 			.item-3
 				display: flex
 				margin: auto
 				flex-flow: column wrap
 				.item-cont
-					padding-bottom: 30px
+					padding-bottom: 26px
 
 
 
@@ -778,7 +819,7 @@
 .sponsors
 	width: 100%
 	background-color: #F8F9FA
-	margin-top: 47px
+	margin-top: 50px
 	.sponsor-cont
 		max-width: 1140px
 		width: 100%
@@ -787,6 +828,15 @@
 		align-items: center
 		height: 180px
 		margin: auto
+		padding-top: 3px
+		.sponsor-2
+			padding-left: 20px
+		.sponsor-3
+			padding-left: 21px
+		.sponsor-4
+			padding-right: 2px
+		.sponsor-5
+			padding-right: 3px
 
 
 
@@ -807,7 +857,8 @@
 .reviews	
 	background: url(../img/reviews-bg.jpg) center  no-repeat
 	background-size: cover
-	height: 1361px
+	height: 1278px
+	margin-top: -3px
 	.reviews-cont
 		display: flex
 		flex-flow: column wrap
@@ -819,17 +870,20 @@
 		position: relative
 		height: 1298px
 		.waves
+			margin-top: -2px
+			margin-left: -2px
 		.title
-			width: 297px
+			width: 310px
 			color: #2c2e37
 			font-family: "Open Sans"
 			font-size: 30px
 			font-weight: 700
 			text-transform: uppercase
-			letter-spacing: 2px
+			letter-spacing: 3px
 			text-align: center
 			padding-top: 23px
 			padding-bottom: 82px
+			padding-left: 2px
 		.reviews-items
 			display: flex
 			flex-flow: row wrap
@@ -837,6 +891,16 @@
 			justify-content: space-between
 			width: 100%
 			padding-bottom: 68px
+			.item-1
+				img
+					margin-left: -2px
+					padding-top: 1px
+			.item-2
+				img
+					padding-left: 2px
+					padding-top: 1px
+				.text
+					margin-left: 1px
 			.item-1, .item-2
 				display: flex
 				flex-flow: column wrap
@@ -846,15 +910,16 @@
 					width: 24px
 					height: 22px
 				.text	
-					max-width: 529px
+					max-width: 530px
 					color: #bcbcbc
 					font-family: "Open Sans"
 					font-size: 18px
-					font-weight: 300
-					line-height: 31px
+					font-weight: 400
+					line-height: 33px
 					text-align: justify
-					padding-top: 12px
-					padding-bottom: 27px
+					padding-top: 11px
+					padding-bottom: 20px
+					margin-left: -1px
 				.user
 					display: flex
 					flex-flow: row wrap
@@ -863,12 +928,15 @@
 						img
 							width: 65px
 							height: 65px
-							padding-right: 20px
+							padding-right: 19px
+							padding-left: 2px
+							padding-top: 3px
 					.name
 						color: #36aeea
 						font-family: "Open Sans"
 						font-size: 16px
 						font-weight: 300
+						margin-top: -2px
 						span
 							font-weight: 700
 		.contact
@@ -879,7 +947,7 @@
 			display: flex
 			flex-flow: column wrap
 			align-items: center
-			margin-top: 65px
+			margin-top: 67px
 			.title
 				max-width: 335px
 				font-family: "Open Sans"
@@ -887,24 +955,30 @@
 				font-size: 36px
 				font-weight: 700
 				padding: 0
+				padding-left: 3px
 			.sub-title
 				color: #383e4a
 				font-size: 16px
 				font-weight: 400
 				line-height: 29px
 				font-family: "Open Sans"
+				margin-top: -3px
 			.contact-form
-				padding-top: 32px
+				padding-top: 29px
 				width: 100%
 				input
-					max-width: 408px
+					max-width: 417px
 					width: 100%
-					height: 52px
+					height: 50px
 					border-radius: 4px
 					border: 3px solid #ffffff
 					background-color: #ffffff
 					margin-bottom: 20px
-					padding: 0 20px
+					padding: 2px 15px
+					font-family: "Roboto"
+					font-weight: 300
+					letter-spacing: 0
+					font-size: 18px
 				.form-group-btn
 					button
 						color: #36aeea
@@ -929,67 +1003,88 @@
 							padding: 13px 49px
 							background-color: #36aeea
 							color: #fff
-		.footer
-			max-width: 1135px
-			width: 100%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer		
+	background: url(../img/footer-bg.jpg) center  no-repeat
+	background-size: cover
+	height: 83px				
+	.footer-cont
+		max-width: 1135px
+		width: 100%
+		display: flex
+		flex-flow: row wrap
+		justify-content: space-between
+		align-items: center
+		height: 83px
+		margin: auto
+		.rights
+			width: 198px
+			color: #77ADBE
+			font-family: "Open Sans"
+			font-size: 18px
+			font-weight: 400
+			padding-left: 2px
+		.title
+			color: #7EC6D6
+			width: 176px
+			font-family: "Roboto"
+			font-size: 27px
+			font-weight: 900
+			padding: 0
+			text-transform: none
+			letter-spacing: 0
+			padding-top: 4px
+			margin-right: -2px
+		.buttons
 			display: flex
-			flex-flow: row wrap
-			justify-content: space-between
-			align-items: center
-			position: absolute
-			bottom: 0
-			height: 83px
-			left: 0
-			.rights
-				width: 198px
-				color: #77ADBE
-				font-family: "Open Sans"
-				font-size: 18px
-				font-weight: 400
-			.title
-				color: #7EC6D6
-				width: 176px
-				font-family: Roboto
-				font-size: 27px
-				font-weight: 900
-				padding: 0
-				text-transform: none
-				letter-spacing: 0
-			.buttons
-				display: flex
-				a
-					margin-right: 5px
-					transition: all 0.3s ease-in-out
-				.tw
-					background-color: #29c5f6
-					width: 39px
-					height: 39px
-					position: relative
-					img
-						position: absolute
-						top: 12px
-						left: 11px
-					&:hover
-						background-color: darken(#29c5f6, 10%)
-				.fb
-					background-color: #6788ce
-					width: 39px
-					height: 39px
-					position: relative
-					img
-						position: absolute
-						top: 10px
-						left: 15px
-					&:hover
-						background-color: darken(#6788ce, 5%)
-				.vk
-					background-color: #54769a
-					width: 39px
-					height: 39px
-					position: relative
-					img
-						position: absolute
-						top: 15px
-						left: 9px
-					&:hover
-						background-color: darken(#54769a, 5%)
+			padding-top: 2px
+			margin-left: -23px
+			a
+				margin-right: 5px
+				transition: all 0.3s ease-in-out
+			.tw
+				background-color: #29c5f6
+				width: 39px
+				height: 39px
+				position: relative
+				img
+					position: absolute
+					top: 13px
+					left: 11px
+				&:hover
+					background-color: darken(#29c5f6, 10%)
+			.fb
+				background-color: #6788ce
+				width: 39px
+				height: 39px
+				position: relative
+				img
+					position: absolute
+					top: 11px
+					left: 16px
+				&:hover
+					background-color: darken(#6788ce, 5%)
+			.vk
+				background-color: #54769a
+				width: 39px
+				height: 39px
+				position: relative
+				img
+					position: absolute
+					top: 14px
+					left: 12px
+				&:hover
+					background-color: darken(#54769a, 5%)
