@@ -33,17 +33,20 @@
 		padding-bottom: 70px;
 	}
 	.journal .journal-cont .gallery .item-3 .it-img{
-		width: 474px;
+		width: 491px;
 	}
-	.journal .journal-cont .gallery .item-3{
+	.journal .journal-cont .gallery .right .item-3{
 		flex-flow: row;
 		max-width: 760px;
 	}
-	.journal .journal-cont .gallery .item-3 .it-cont .arrow {
+	.journal .journal-cont .gallery .right .item-3 .it-cont .arrow {
 		position: absolute;
 		top: 50px;
 		left: -11px;
 		transform: rotate(0deg);
+	}
+	.journal .journal-cont .gallery .right{
+		max-width: 760px;
 	}
 	.work .work-cont .work-items .item-1{
 		padding-left: 20px;
@@ -52,7 +55,58 @@
 		padding-right: 20px;
 	}
 }
-@media only screen and (max-width : 1140px){
+@media only screen and (max-width : 1200px){
+	.footer .footer-cont{
+		justify-content: space-around;
+	}
+	.header .nav-bg .nav button{
+		right: 20px;
+	}
+	.sponsors .sponsor-cont .sponsor-6{
+		margin-right: 0;
+	}
+	.order .order-cont{
+		align-items: center
+	}
+	.order .order-cont .sub-title{
+		text-align: center;
+	}
+	.order .order-cont .form{
+		max-width: 602px;
+	}
+	.order .order-cont .form form{
+		background-color: transparent;
+		justify-content: center
+	}
+	.order .order-cont .form form button{
+		background-color: transparent;
+		margin-top: 20px;
+	}
+	.order .order-cont .form form .btn{
+		display: flex;
+		margin: auto;
+		margin-top: 20px;
+	}
+
+	.work .work-cont .work-items .item-3{
+		padding-top: 20px;
+	}
+	.work .work-cont .work-items .item-4{
+		padding-right: 0;
+		padding-top: 20px;
+	}
+	.work .work-cont .work-items .item-1{
+		padding-left: 0;
+	}
+	.work .work-cont .work-items{
+		justify-content: center;
+	}
+	.work .work-cont .shape-cont{
+		display: none;
+	}
+	.work .work-cont .work-items .item-1, .work .work-cont .work-items .item-2, .work .work-cont .work-items .item-3, .work .work-cont .work-items .item-4{
+		max-width: 370px;
+	}
 	.gallery .gallery-cont .gallery-items .item-3{
 		margin: auto;
 		flex-flow: row;
@@ -67,15 +121,10 @@
 	.gallery .gallery-cont .gallery-items .pad-right{
 		padding-right: 30px;
 	}
-	.order .order-cont .sub-title{
-		text-align: center;
-	}
-	.reviews .reviews-cont .footer{
-		justify-content: space-around;
-	}
+
 	.travel .travel-cont .tours .item-container{
 		width: 100%;
-		max-width: 280px;
+		max-width: 286px;
 		display: flex;
 		justify-content: center;
 	}
@@ -100,12 +149,14 @@
 	.reviews .reviews-cont .reviews-items{
 		justify-content: space-around;
 	}
-	.order .order-cont{
-		align-items: center
-	}
+
 	.sponsors .sponsor-cont{
 		justify-content: space-around;
 	}
+
+}
+@media only screen and (max-width : 1140px){
+
 }
 @media only screen and (max-width : 1024px) {
 	.work .work-cont .work-items .item-1 .shape-cont img{
@@ -115,28 +166,16 @@
 		max-width: 257px;
 	}
 }
-@media only screen and (max-width : 920px) {
-	.work .work-cont .work-items .item-1 .shape-cont{
-		display: none;
+@media only screen and (max-width : 950px) {
+	.about .about-cont .right{
+		height: 370px;
+	}
+	.about .about-cont .left button{
+		display: flex;
+		margin: auto;
 	}
 	.travel .travel-cont .tours .item-container{
 		max-width: 256px;
-	}
-	.work .work-cont .work-items .item-1, .work .work-cont .work-items .item-2, .work .work-cont .work-items .item-3, .work .work-cont .work-items .item-4{
-		max-width: 250px;
-	}
-	.work .work-cont .work-items .item-2{
-		padding-right: 20px;
-	}
-	.work .work-cont .work-items .item-3{
-		padding-left: 20px;
-		padding-top: 20px;
-	}
-	.work .work-cont .work-items .item-4{
-		padding-top: 20px;
-	}
-	.work .work-cont .work-items{
-		justify-content: center;
 	}
 	.header .nav-bg .nav .menu a{
 		font-size: 10px;
@@ -157,7 +196,7 @@
 		max-width: 500px;
 		width: 100%;
 		right: 50px;
-		top: 45px;
+		top: 0;
 		left: auto;
 	}
 	.about .about-cont .right .img-1 {
@@ -170,20 +209,7 @@
 		max-width: 600px;
 		text-align: center;
 	}
-	.order .order-cont .form{
-		max-width: 602px;
-	}
-	.order .order-cont .form form{
-		background-color: transparent;
-	}
-	.order .order-cont .form form button{
-		background-color: transparent;
-	}
-	.order .order-cont .form form .btn{
-		display: flex;
-		margin: auto;
-		margin-top: 20px;
-	}
+
 	.reviews .reviews-cont .reviews-items .item-1, .reviews .reviews-cont .reviews-items .item-2{
 		background-color: rgba(255,255,255,.7);
 		padding: 20px;
@@ -193,4 +219,15 @@
 		margin-bottom: 10px;
 	}
 }
+@media only screen and (max-width : 800px) {
 
+	.travel .travel-cont .tours .item-container{
+		max-width: 225px;
+	}
+
+}
+@media only screen and (max-width : 780px) {
+		.journal .journal-cont .gallery{
+		width: 100%;
+	}
+}

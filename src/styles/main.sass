@@ -3,26 +3,20 @@
 	src: url(../fonts/bringin.otf)
 
 
-.button
-	right: 0
+button
 	cursor: pointer
-	a
-		color: #36aeea
-		font-family: Raleway
-		font-size: 12px
-		font-weight: 700
-		line-height: 44px
-		text-transform: uppercase
+	font-family: Raleway
+	font-size: 12px
+	font-weight: 700
+	line-height: 44px
+	border-radius: 4px
+	border: 3px solid #36aeea
+	transition: all 0.3s ease-in-out
+	background-color: transparent
+	&:hover
 		border-radius: 4px
 		border: 3px solid #36aeea
-		padding: 13px 42px
-		transition: all 0.3s ease-in-out
-		&:hover
-			border-radius: 4px
-			border: 3px solid #36aeea
-			padding: 13px 49px
-			background-color: #36aeea
-			color: #fff
+		background-color: #36aeea
 .header
 	background: url(../img/header-bg.jpg) center  no-repeat
 	background-size: cover
@@ -38,14 +32,16 @@
 			align-items: center
 			height: 88px
 			position: relative
+			margin-top: -2px
 			.logo
-				font-family: Bringin
+				font-family: "Bringin"
 				font-size: 29px
 				font-weight: 400
 				line-height: 44px
 				text-transform: capitalize
 				transition: all 0.3s ease-in-out
 				padding-left: 9px
+				margin-top: -2px
 				&:hover
 					transform: scale(1.2,1.2)
 				span
@@ -54,6 +50,9 @@
 					color: #95a5ad
 			.menu
 				padding-left: 60px
+				margin-top: -2px
+				.a-5
+					margin-left: -2px
 				a
 					color: #9daeb6
 					font-family: "Open Sans"
@@ -67,13 +66,22 @@
 						// margin: 0
 					&:hover
 						border-bottom: 2px solid #36aeea
-					
-
-			.button
+			button
 				position: absolute
+				margin-top: -1px
+				right: 0
 				top: 23px
 				right: -9px
 				letter-spacing: 2px
+				color: #36aeea
+				font-family: Raleway
+				font-size: 12px
+				font-weight: 700
+				text-transform: uppercase
+				padding: 14px 42px 12px
+				outline: none
+				&:hover
+					color: #fff
 	.title-pos
 		display: flex
 		max-width: 1135px
@@ -92,7 +100,7 @@
 				font-family: Bringin
 				font-size: 67px
 				font-weight: 400
-				line-height: 40px
+				line-height: 40.5px
 				letter-spacing: 1px
 				span
 					font-family: "Open Sans"
@@ -104,7 +112,7 @@
 			.sub-title
 				opacity: 0.75
 				color: #ffffff
-				font-family: "OpenSans-Regular"
+				font-family: "Open Sans"
 				font-size: 18px
 				font-weight: 400
 				line-height: 29px
@@ -112,15 +120,19 @@
 				padding-top: 19px
 				padding-left: 3px
 				max-width: 450px
-			.button
+			button
 				margin-left: 4px
-				a
-					font-family: Raleway
-					font-size: 14px
-					font-weight: 700
-					text-transform: uppercase
-					letter-spacing: 2px
-					padding: 19px 71px
+				margin-top: -7px
+				color: #36aeea
+				font-family: Raleway
+				font-size: 14px
+				font-weight: 700
+				line-height: 44px
+				text-transform: uppercase
+				padding: 6px 71px 5px
+				letter-spacing: 2px
+				&:hover
+					color: #fff
 
 
 
@@ -146,35 +158,47 @@
 		.left
 			display: flex
 			flex-flow: column 
-			height: 238px
+			height: 243px
 			width: 454px
 			cursor: default
 			padding-bottom: 40px
 			width: 100%
 			.waves
-				padding-top: 2px
+				padding-top: 5px
 			.title
 				color: #2c2e37
 				font-family: "Open Sans"
-				font-size: 21px
+				font-size: 20px
 				font-weight: 700
 				line-height: 43px
 				text-transform: uppercase
 				padding-top: 25px
-				letter-spacing: 1px
+				letter-spacing: 1.4px
 			.sub-title
 				color: #949494
 				font-family: "Open Sans"
 				font-size: 15px
 				font-weight: 400
 				line-height: 26px
-				padding-top: 9px
-				padding-bottom: 23px
-			.button
+				padding-top: 8px
+				padding-bottom: 26px
+				letter-spacing: -0.2px
+				padding-left: 1px
+			button
 				padding-left: 2px	
-				a
-					padding: 10px 23px
-					letter-spacing: 1px
+				margin-left: 2px
+				color: #36aeea
+				font-weight: 700
+				text-transform: uppercase
+				padding: 8px 20px 11px
+				font-family: "Open Sans"
+				font-size: 12px
+				font-weight: 700
+				width: 130px
+				outline: none
+				letter-spacing: 1px
+				&:hover
+					color: #fff
 
 		.right
 			max-width: 895px
@@ -184,7 +208,7 @@
 			.img-1, .img-2
 				position: absolute
 			.img-1
-				bottom: 35px
+				bottom: 36px
 				left: -112px
 				z-index: 1
 				img
@@ -223,200 +247,226 @@
 			font-weight: 700
 			text-transform: uppercase
 			padding-top: 22px
-			padding-bottom: 68px
+			padding-bottom: 70px
 			letter-spacing: 3px
 
 		.gallery
 			display: flex
 			flex-flow: row wrap
 			box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.1)
-			.item-1
-				max-width: 760px
+			.left
 				width: 100%
-				display: flex
-				flex-flow: row 
-				.it-img
-					background-image: url("../img/journal-img-1.png")
-					width: 760px
-					height: 380px
-					display: flex
-					justify-content: center
-					align-items: center
-					img
-						width: 81px
-						height: 81px
-				.it-cont
-					position: relative
-					max-width: 380px
+				max-width: 760px
+				.item-1
+					max-width: 760px
 					width: 100%
-					padding: 23px 0
-					.arrow
-						position: absolute
-						left: -11px
-						top: 50px
-					.title
-						font-family: "Open Sans"
-						font-size: 11px
-						font-weight: 700
-						text-transform: uppercase
-						letter-spacing: 2px
-						padding-bottom: 48px
-						a
-							color: #0083b3
-							transition: all 0.3s ease-in-out
-							&:hover
-								color: #16b5ef
-					.sub-title
-						color: #212121
-						font-family: "Open Sans"
-						font-size: 17px
-						font-weight: 700
-						text-transform: uppercase
-						max-width: 330px
-						margin: auto
-						padding-bottom: 19px
-						letter-spacing: 2px
-					.text
-						color: #777777
-						font-family: "Open Sans"
-						font-size: 15px
-						font-weight: 400
-						line-height: 22px
-						margin: auto
-					.number
-						color: #212121
-						font-family: "Times New Roman"
-						font-size: 14px
-						font-weight: 400
-						font-style: italic
-						padding-top: 38px
+					display: flex
+					flex-flow: row 
+					.it-img
+						background-image: url("../img/journal-img-1.png")
+						max-width: 760px
+						width: 100%
+						height: 380px
+						display: flex
+						justify-content: center
+						align-items: center
+						img
+							width: 81px
+							height: 81px
+					.it-cont
+						position: relative
+						max-width: 380px
+						width: 100%
+						padding: 23px 0
+						.arrow
+							position: absolute
+							left: -11px
+							top: 50px
+						.title
+							font-family: "Open Sans"
+							font-size: 11px
+							font-weight: 700
+							text-transform: uppercase
+							letter-spacing: 2px
+							padding-bottom: 46px
+							line-height: 16px
+							padding-top: 20px
+							padding-left: 1px
+							a
+								color: #0083b3
+								transition: all 0.3s ease-in-out
+								&:hover
+									color: #16b5ef
+						.sub-title
+							color: #212121
+							font-family: "Open Sans"
+							font-size: 17px
+							font-weight: 700
+							text-transform: uppercase
+							max-width: 330px
+							margin: auto
+							padding-bottom: 19px
+							letter-spacing: 1.9px
+							line-height: 24px
+						.text
+							color: #777777
+							font-family: "Open Sans"
+							font-size: 15px
+							font-weight: 400
+							line-height: 22px
+							margin: auto
+							letter-spacing: -0.5px
+							margin-left: 7px
+						.number
+							color: #212121
+							font-family: "Times New Roman"
+							font-size: 14px
+							font-weight: 400
+							font-style: italic
+							padding-top: 38px
 
 
-			.item-2
-				max-width: 760px
-				width: 100%
-				display: flex
-				flex-flow: row 
-				.it-img
-					background-image: url("../img/journal-img-3.png")
-					width: 760px
-					height: 380px
-					display: flex
-					justify-content: center
-					align-items: center
-					img
-						width: 65px
-						height: 65px
-				.it-cont
-					position: relative
-					max-width: 380px
+				.item-2
+					max-width: 760px
 					width: 100%
-					padding: 23px 0
-					.arrow
-						position: absolute
-						top: 49px
-						right: -11px
-						transform: rotate(180deg)
-					.title
-						font-family: "Open Sans"
-						font-size: 11px
-						font-weight: 700
-						text-transform: uppercase
-						letter-spacing: 2px
-						padding-bottom: 48px
-						a
-							color: #0083b3
-							transition: all 0.3s ease-in-out
-							&:hover
-								color: #16b5ef
-					.sub-title
-						color: #212121
-						font-family: "Open Sans"
-						font-size: 17px
-						font-weight: 700
-						text-transform: uppercase
-						max-width: 300px
-						margin: auto
-						padding-bottom: 20px
-						letter-spacing: 2px
-						padding-left: 5px
-					.text
-						color: #777777
-						font-family: "Open Sans"
-						font-size: 15px
-						font-weight: 400
-						line-height: 22px
-						margin: auto
-					.number
-						color: #212121
-						font-family: "Times New Roman"
-						font-size: 14px
-						font-weight: 400
-						font-style: italic
-						padding-top: 38px
-			.item-3
+					display: flex
+					flex-flow: row 
+					.it-img
+						background-image: url("../img/journal-img-3.png")
+						max-width: 760px
+						width: 100%
+						height: 380px
+						display: flex
+						justify-content: center
+						align-items: center
+						img
+							width: 65px
+							height: 65px
+					.it-cont
+						position: relative
+						max-width: 380px
+						width: 100%
+						padding: 23px 0
+						.arrow
+							position: absolute
+							top: 49px
+							right: -11px
+							transform: rotate(180deg)
+						.title
+							font-family: "Open Sans"
+							font-size: 11px
+							font-weight: 700
+							text-transform: uppercase
+							letter-spacing: 2px
+							padding-bottom: 46px
+							padding-top: 20px
+							padding-left: 3px
+							a
+								color: #0083b3
+								transition: all 0.3s ease-in-out
+								&:hover
+									color: #16b5ef
+						.sub-title
+							color: #212121
+							font-family: "Open Sans"
+							font-size: 17px
+							font-weight: 700
+							text-transform: uppercase
+							max-width: 300px
+							margin: auto
+							padding-bottom: 19px
+							letter-spacing: 1.9px
+							padding-left: 5px
+							line-height: 25px
+						.text
+							color: #777777
+							font-family: "Open Sans"
+							font-size: 15px
+							font-weight: 400
+							line-height: 23px
+							margin: auto
+							margin-top: -3px
+							letter-spacing: -0.6px
+						.number
+							color: #212121
+							font-family: "Times New Roman"
+							font-size: 14px
+							font-weight: 400
+							font-style: italic
+							padding-top: 34px
+			.right
+				width: 100%
 				max-width: 380px
-				width: 100%
-				display: flex
-				flex-flow: column
-				.it-img
-					background-image: url("../img/journal-img-2.png")
-					width: 380px
-					height: 380px
-					display: flex
-					justify-content: center
-					align-items: center
-					img
-						width: 59px
-						height: 74px
-				.it-cont
-					position: relative
+				.item-3
 					max-width: 380px
 					width: 100%
-					padding: 23px 0
-					.arrow
-						position: absolute
-						left: 55px
-						top: -17px
-						transform: rotate(90deg)
-					.title
-						font-family: "Open Sans"
-						font-size: 11px
-						font-weight: 700
-						text-transform: uppercase
-						letter-spacing: 1px
-						padding-bottom: 46px
-						a
-							color: #0083b3
-							transition: all 0.3s ease-in-out
-							&:hover
-								color: #16b5ef
-					.sub-title
-						color: #212121
-						font-family: "Open Sans"
-						font-size: 17px
-						font-weight: 700
-						text-transform: uppercase
-						max-width: 200px
-						margin: auto
-						padding-bottom: 42px
-						letter-spacing: 1pt
-						line-height: 24px
-					.text
-						color: #777777
-						font-family: "Open Sans"
-						font-size: 15px
-						font-weight: 400
-						line-height: 22px
-						margin: auto
-					.number
-						color: #212121
-						font-family: "Times New Roman"
-						font-size: 14px
-						font-weight: 400
-						font-style: italic
-						padding-top: 37px
-						padding-left: 8px
+					display: flex
+					flex-flow: column
+					.it-img
+						background-image: url("../img/journal-img-2.png")
+						max-width: 380px
+						width: 100%
+						height: 380px
+						display: flex
+						justify-content: center
+						align-items: center
+						img
+							width: 59px
+							height: 74px
+					.it-cont
+						position: relative
+						max-width: 380px
+						width: 100%
+						padding: 23px 0
+						.arrow
+							position: absolute
+							left: 55px
+							top: -17px
+							transform: rotate(90deg)
+						.title
+							font-family: "Open Sans"
+							font-size: 11px
+							font-weight: 700
+							text-transform: uppercase
+							letter-spacing: 2px
+							padding-bottom: 46px
+							padding-top: 20px
+							padding-left: 3px
+							a
+								color: #0083b3
+								transition: all 0.3s ease-in-out
+								&:hover
+									color: #16b5ef
+						.sub-title
+							color: #212121
+							font-family: "Open Sans"
+							font-size: 17px
+							font-weight: 700
+							text-transform: uppercase
+							max-width: 200px
+							margin: auto
+							padding-bottom: 42px
+							letter-spacing: 1.4pt
+							line-height: 24px
+							padding-top: 1px
+							padding-left: 5px
+						.text
+							color: #777777
+							font-family: "Open Sans"
+							font-size: 15px
+							font-weight: 400
+							line-height: 23px
+							margin: auto
+							letter-spacing: -0.5px
+							padding-left: 2px
+						.number
+							color: #212121
+							font-family: "Times New Roman"
+							font-size: 14px
+							font-weight: 400
+							font-style: italic
+							padding-top: 33px
+							padding-left: 8px
 
 
 
@@ -438,7 +488,7 @@
 		align-items: flex-start
 		height: 651px
 		.waves
-			padding-top: 138px
+			padding-top: 139px
 			margin-left: -2px
 		.title
 			color: #2c2e37
@@ -446,10 +496,10 @@
 			font-size: 20px
 			font-weight: 700
 			text-transform: uppercase
-			padding-top: 32px
+			padding-top: 31px
 			padding-bottom: 14px
 			cursor: default
-			letter-spacing: 1pt
+			letter-spacing: 1.2pt
 			margin-left: -2px
 		.sub-title
 			color: #949494
@@ -460,6 +510,7 @@
 			padding-bottom: 27px
 			cursor: default
 			margin-left: -1px
+			letter-spacing: 0.1px
 		.validation
 			color: #36AEEA
 			font-family: "Open Sans"
@@ -468,6 +519,7 @@
 			cursor: default
 			padding-top: 17px
 			display: flex
+			letter-spacing: 0.3px
 			img
 				padding-right: 12px
 				margin-left: -2px
@@ -519,9 +571,10 @@
 					transition: all 0.3s ease-in-out
 					margin-top: 2px
 					margin-right: 2px
-					background-color: #fff
+					background-color: transparent
 					margin-left: 29px
 					letter-spacing: 1px
+					margin-bottom: 2px
 					&:hover
 						border-radius: 4px
 						border: 3px solid #36aeea
@@ -546,8 +599,14 @@
 		margin: auto
 		align-items: center
 		cursor: default
+		.shape-cont
+			position: absolute
+			top: 77px
+			max-width: 1084px
+			width: 100%
 		.waves
 			padding-top: 63px
+			margin-left: -2px
 		.title
 			color: #2c2e37
 			font-family: "Open Sans"
@@ -560,10 +619,13 @@
 			display: flex
 			flex-flow: row wrap
 			justify-content: space-between
-			max-width: 1082px
+			max-width: 1084px
 			width: 100%
 			padding-top: 67px
 			padding-bottom: 45px
+			position: relative
+			.item-2
+				margin-left: -2px
 			.item-1, .item-2, .item-3, .item-4
 				display: flex
 				flex-flow: column wrap
@@ -591,7 +653,7 @@
 						width: 123px
 						height: 134px
 						padding-top: 9px
-						margin-left: -2px
+						margin-left: -3px
 				.title
 					font-family: "Roboto"
 					color: #2c2e37
@@ -602,28 +664,27 @@
 					letter-spacing: 0
 					padding-top: 24px
 					padding-bottom: 3px
+					letter-spacing: 0.1px
+					padding-left: 3px
 				.sub-title
 					color: #949494
 					font-size: 15px
 					font-weight: 300
 					font-family: "Roboto"
-					line-height: 23px
-					letter-spacing: 1px
-					width: 250px
+					line-height: 24px
+					width: 219px
+					letter-spacing: 0.4px
+					padding-left: 4px
+					margin-top: -1px
 			.item-1
-				position: relative
 				padding-left: 2px
-				.shape-cont
-					position: absolute
-					top: 10px
-					left: 82px
-					max-width: 926px
-					width: 100%
+				
 			.item-2
 				.title
 					margin-left: -3px
-					
-
+				.sub-title
+					margin-top: -3px
+					margin-left: -4px
 
 
 
@@ -637,7 +698,7 @@
 	background: url(../img/travel-bg.jpg) center  no-repeat
 	background-size: cover
 	height: 1080px
-	margin-top: -4px
+	margin-top: -5px
 	.travel-cont
 		display: flex
 		flex-flow: column wrap
@@ -664,6 +725,7 @@
 			color: white
 			text-align: left
 			justify-content: center
+			margin-left: -2px
 			.tour-item-1
 				background-image: url("../img/tour-item-1.png")
 				margin-right: 35px
@@ -671,7 +733,7 @@
 					width: 98px
 					height: 38px
 					padding-top: 4px
-					padding-left: 10px
+					padding-left: 11px
 			.tour-item-2
 				background-image: url("../img/tour-item-2.png")
 				margin-right: 35px
@@ -679,30 +741,30 @@
 					width: 118px
 					height: 38px
 					padding-top: 4px
-					padding-left: 7px
+					padding-left: 8px
 			.tour-item-3
 				background-image: url("../img/tour-item-3.png")
 				margin-right: 35px
 				img
 					width: 118px
 					height: 38px
-					padding-top: 3px
-					padding-left: 8px
+					padding-top: 4px
+					padding-left: 9px
 			.tour-item-4
 				background-image: url("../img/tour-item-4.png")
 				margin-right: 35px
 				img
 					width: 118px
 					height: 38px
-					padding-top: 3px
+					padding-top: 4px
 					padding-left: 10px
 			.tour-item-5
 				background-image: url("../img/tour-item-5.png")
 				img
 					width: 78px
 					height: 38px
-					padding-top: 3px
-					padding-left: 10px
+					padding-top: 4px
+					padding-left: 11px
 			.tour-item-5
 				.price
 					.price-right
@@ -714,18 +776,20 @@
 				flex-flow: column wrap
 				justify-content: space-between
 				.text
-					padding-left: 20px
+					padding-left: 19px
 					padding-right: 11px
-					padding-top: 14px
+					padding-top: 12px
 					.title
 						color: #ffffff
 						font-family: "Open Sans"
-						font-size: 26px
 						font-weight: 400
-						padding: 0
 						text-transform: none
 						width: 141px
-						letter-spacing: 1px
+						letter-spacing: 0
+						font-size: 28px
+						font-weight: 400
+						line-height: 37px
+						padding: 0 0 0 1px
 						a
 							color: #ffffff
 							&:hover
@@ -737,7 +801,8 @@
 						font-size: 16px
 						font-weight: 400
 						line-height: 22px
-						padding-top: 10px
+						padding-top: 11px
+						padding-left: 1px
 				.price
 					padding-left: 19px
 					padding-right: 12px
@@ -750,14 +815,17 @@
 						font-family: "Open Sans"
 						font-size: 18px
 						font-weight: 400
+						line-height: 22px
 						text-decoration: line-through
-
+						padding-left: 1px
+						padding-top: 1px
 					.price-right
 						color: #ffffff
 						font-family: "Open Sans"
 						font-size: 26px
 						font-weight: 700
 						line-height: 22px
+						padding-bottom: 1px
 
 
 
@@ -768,6 +836,7 @@
 
 .gallery
 	width: 100%
+	margin-top: -1px
 	.gallery-cont	
 		max-width: 1140px
 		width: 100%
@@ -777,7 +846,7 @@
 		align-items: center
 		cursor: default
 		.waves
-			padding-top: 64px
+			padding-top: 65px
 			margin-left: -2px
 		.title
 			width: 148px
@@ -789,10 +858,12 @@
 			letter-spacing: 3px
 			padding-top: 22px
 			padding-bottom: 64px
+			margin-left: -3px
 		.gallery-items
 			display: flex
 			flex-flow: row wrap
 			opacity: 0.85
+			margin-left: -2px
 			.item-1, .item-2
 				padding-right: 29px
 				display: flex
@@ -819,25 +890,27 @@
 .sponsors
 	width: 100%
 	background-color: #F8F9FA
-	margin-top: 50px
+	margin-top: 49px
 	.sponsor-cont
 		max-width: 1140px
 		width: 100%
 		display: flex
 		justify-content: space-between
 		align-items: center
-		height: 180px
+		height: 185px
 		margin: auto
-		padding-top: 3px
+		padding-top: 1px
 		.sponsor-2
-			padding-left: 20px
+			padding-left: 22px
 		.sponsor-3
 			padding-left: 21px
 		.sponsor-4
 			padding-right: 2px
 		.sponsor-5
-			padding-right: 3px
-
+			padding-right: 5px
+		.sponsor-6
+			margin-right: -2px
+			padding-left: 2px
 
 
 
@@ -858,7 +931,7 @@
 	background: url(../img/reviews-bg.jpg) center  no-repeat
 	background-size: cover
 	height: 1278px
-	margin-top: -3px
+	margin-top: -6px
 	.reviews-cont
 		display: flex
 		flex-flow: column wrap
@@ -870,7 +943,6 @@
 		position: relative
 		height: 1298px
 		.waves
-			margin-top: -2px
 			margin-left: -2px
 		.title
 			width: 310px
@@ -879,22 +951,26 @@
 			font-size: 30px
 			font-weight: 700
 			text-transform: uppercase
-			letter-spacing: 3px
+			letter-spacing: 2.8px
 			text-align: center
-			padding-top: 23px
+			padding-top: 22px
 			padding-bottom: 82px
-			padding-left: 2px
+			padding-left: 4px
+			line-height: 43px
+			margin-top: -2px
+			margin-left: -2px
 		.reviews-items
 			display: flex
 			flex-flow: row wrap
 			max-width: 1113px
 			justify-content: space-between
 			width: 100%
-			padding-bottom: 68px
+			padding-bottom: 67px
 			.item-1
 				img
 					margin-left: -2px
 					padding-top: 1px
+
 			.item-2
 				img
 					padding-left: 2px
@@ -917,13 +993,14 @@
 					font-weight: 400
 					line-height: 33px
 					text-align: justify
-					padding-top: 11px
+					padding-top: 10px
 					padding-bottom: 20px
 					margin-left: -1px
 				.user
 					display: flex
 					flex-flow: row wrap
 					align-items: center
+					margin-top: -1px
 					.photo
 						img
 							width: 65px
@@ -935,8 +1012,9 @@
 						color: #36aeea
 						font-family: "Open Sans"
 						font-size: 16px
-						font-weight: 300
+						font-weight: 400
 						margin-top: -2px
+						letter-spacing: -0.1px
 						span
 							font-weight: 700
 		.contact
@@ -956,13 +1034,17 @@
 				font-weight: 700
 				padding: 0
 				padding-left: 3px
+				padding-top: 5px
+				padding-left: 4px
+				letter-spacing: 3.4px
+
 			.sub-title
 				color: #383e4a
 				font-size: 16px
 				font-weight: 400
 				line-height: 29px
 				font-family: "Open Sans"
-				margin-top: -3px
+				margin-top: 1px
 			.contact-form
 				padding-top: 29px
 				width: 100%
@@ -979,6 +1061,10 @@
 					font-weight: 300
 					letter-spacing: 0
 					font-size: 18px
+				#contactname
+					margin-top: -1px
+				#contactmail
+					margin-top: 1px
 				.form-group-btn
 					button
 						color: #36aeea
@@ -989,12 +1075,12 @@
 						text-transform: uppercase
 						border-radius: 4px
 						border: 3px solid #36aeea
-						padding: 13px 49px
+						padding: 12px 49px
 						transition: all 0.3s ease-in-out
 						background-color: transparent
 						max-width: 454px
 						width: 100%
-						height: 70px
+						height: 69px
 						letter-spacing: 3px
 						outline: none
 						&:hover
@@ -1022,7 +1108,7 @@
 	background-size: cover
 	height: 83px				
 	.footer-cont
-		max-width: 1135px
+		max-width: 1131px
 		width: 100%
 		display: flex
 		flex-flow: row wrap
@@ -1036,10 +1122,9 @@
 			font-family: "Open Sans"
 			font-size: 18px
 			font-weight: 400
-			padding-left: 2px
 		.title
 			color: #7EC6D6
-			width: 176px
+			width: 181px
 			font-family: "Roboto"
 			font-size: 27px
 			font-weight: 900
@@ -1047,11 +1132,11 @@
 			text-transform: none
 			letter-spacing: 0
 			padding-top: 4px
-			margin-right: -2px
+			margin-right: -9px
 		.buttons
 			display: flex
 			padding-top: 2px
-			margin-left: -23px
+			padding-right: 24px
 			a
 				margin-right: 5px
 				transition: all 0.3s ease-in-out
